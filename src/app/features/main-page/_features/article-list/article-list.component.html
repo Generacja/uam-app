@@ -1,8 +1,5 @@
-{{ test | json }}
 <section class="wrapper__articles">
-  <app-article></app-article>
-  <app-article></app-article>
-  <app-article></app-article>
-  <app-article></app-article>
-  <app-article></app-article>
+  <ng-container *ngFor="let fact of facts">
+    <app-article [fact]="fact"></app-article>
+  </ng-container>
 </section>

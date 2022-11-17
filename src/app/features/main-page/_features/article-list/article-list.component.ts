@@ -8,16 +8,16 @@ import {firstValueFrom} from "rxjs";
   styleUrls: ['./article-list.component.scss']
 })
 export class ArticleListComponent {
-  public test = null;
+  public facts: Array<any> = [];
   constructor(private factsService: FactsService, private changeDetectorRef: ChangeDetectorRef) {
     this.fetchCatFacts();
   }
 
 
   async fetchCatFacts() {
-    this.test = await firstValueFrom(this.factsService.getFacts());
+    const payload = await firstValueFrom(this.factsService.getFacts());
+    this.facts = payload.data;
     this.changeDetectorRef.detectChanges();
-    console.log(this.test);
   }
 
 }
