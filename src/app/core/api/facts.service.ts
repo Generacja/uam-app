@@ -6,4 +6,8 @@ import { Injectable } from '@angular/core';
 export class FactsService {
 
   constructor() { }
+
+  test() {
+    console.log('Kitty');
+  }
 }

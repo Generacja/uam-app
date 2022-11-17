@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {FactsService} from "../../core/api/facts.service";
 
 @Component({
   selector: 'app-main-page',
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainPageComponent implements OnInit {
 
-  constructor() { }
+  constructor(private factsService: FactsService) {
+    this.factsService.test();
+  }
 
   ngOnInit(): void {
   }
