@@ -1,0 +1,12 @@
+article {
+  border-left: 5px solid #000;
+  border-bottom: 5px solid #000;
+  display: grid;
+  padding: 15px;
+  margin-bottom: 30px;
+  grid-template-columns: 400px 1fr;
+  grid-template-rows: 1fr;
+}
+.fact__text {
+  text-align: justify;
+}

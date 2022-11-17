@@ -8,7 +8,7 @@ import {Component, Input, OnInit} from '@angular/core';
 export class ArticleComponent implements OnInit {
 
   @Input()
-  public fact = null;
+  public fact: any = null;
 
   constructor() { }
 

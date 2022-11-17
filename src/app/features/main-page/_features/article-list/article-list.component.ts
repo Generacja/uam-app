@@ -16,6 +16,7 @@ export class ArticleListComponent {
 
   async fetchCatFacts() {
     const payload = await firstValueFrom(this.factsService.getFacts());
+    console.log(payload);
     this.facts = payload.data;
     this.changeDetectorRef.detectChanges();
   }
