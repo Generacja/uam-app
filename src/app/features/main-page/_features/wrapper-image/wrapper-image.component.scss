@@ -1,0 +1,23 @@
+.wrapper__image {
+  width:100%;
+  position:relative;
+  height:100%;
+  background-size: cover;
+  background-image: url('https://wallpaperaccess.com/full/255883.jpg');
+  background-position:center;
+  background-attachment: fixed;
+  filter: grayscale(1);
+  .wrapper__image__title {
+    position:absolute;
+    bottom:100px;
+    left:100px;
+    h1 {
+      font-weight: 300;
+      font-size: 86px;
+      margin: 0;
+      color: #fff;
+      text-shadow: 1px 1px #333;
+      text-transform: uppercase;
+    }
+  }
+}
