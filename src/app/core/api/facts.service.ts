@@ -9,9 +9,7 @@ export class FactsService {
   constructor(private httpClient: HttpClient) { }
 
   getFacts() {
-    this.httpClient.get('https://catfact.ninja/facts?limit=10').subscribe((payload) => {
-      console.log(payload)
-    });
+    return this.httpClient.get('https://catfact.ninja/facts?limit=10');
   }
 
   test() {
