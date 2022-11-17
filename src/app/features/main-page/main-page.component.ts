@@ -9,7 +9,7 @@ import {FactsService} from "../../core/api/facts.service";
 export class MainPageComponent implements OnInit {
 
   constructor(private factsService: FactsService) {
-    this.factsService.test();
+    this.factsService.getFacts();
   }
 
   ngOnInit(): void {
