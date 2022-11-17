@@ -6,7 +6,9 @@ article {
   margin-bottom: 30px;
   grid-template-columns: 400px 1fr;
   grid-template-rows: 1fr;
+  min-height: 200px;
 }
 .fact__text {
   text-align: justify;
+  font-size: 28px;
 }
