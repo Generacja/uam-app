@@ -4,6 +4,7 @@ import {MainPageComponent} from './main-page.component';
 import {NavbarModule} from "../../shared/features/navbar/navbar.module";
 import {WrapperImageModule} from "./_features/wrapper-image/wrapper-image.module";
 import {ArticleListModule} from "./_features/article-list/article-list.module";
+import {Route} from "./main-page-routing.module";
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import {ArticleListModule} from "./_features/article-list/article-list.module";
         CommonModule,
         NavbarModule,
         WrapperImageModule,
-        ArticleListModule
+        ArticleListModule,
+        Route
     ]
 })
 export class MainPageModule {

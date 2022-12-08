@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { WrapperImageComponent } from './wrapper-image.component';
+import { ContactComponent } from './contact.component';
 
-describe('WrapperImageComponent', () => {
-  let component: WrapperImageComponent;
-  let fixture: ComponentFixture<WrapperImageComponent>;
+describe('ContactComponent', () => {
+  let component: ContactComponent;
+  let fixture: ComponentFixture<ContactComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ WrapperImageComponent ]
+      declarations: [ ContactComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(WrapperImageComponent);
+    fixture = TestBed.createComponent(ContactComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
